@@ -2,7 +2,7 @@ package com.api.programacrud.aplication;
 
 import com.api.programacrud.domain.model.UserModel;
 
-public interface UseStorage {
+public interface UserStorage {
     UserModel get(Long id);
 
     UserModel save(UserModel userModel);
