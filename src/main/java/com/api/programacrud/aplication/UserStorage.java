@@ -7,7 +7,7 @@ public interface UserStorage {
 
     UserModel save(UserModel userModel);
 
-    UserModel delete(Long id);
+    void delete(Long id);
 
     UserModel update(UserModel userModel);
 }
