@@ -30,6 +30,5 @@ public class UserPersistence implements UserStorage {
     @Override
     public UserModel update(UserModel userModel) {
         return userMapperEntity.convertToModel(userRepository.save(userMapperEntity.convertToEntity(userModel)));
-
     }
 }

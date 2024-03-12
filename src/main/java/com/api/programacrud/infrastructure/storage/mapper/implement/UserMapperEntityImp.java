@@ -9,11 +9,19 @@ import org.springframework.stereotype.Component;
 public class UserMapperEntityImp implements UserMapperEntity {
     @Override
     public UserModel convertToModel(UserEntity userEntity) {
-        return null;
+        UserModel userModel = new UserModel();
+        userModel.setId(userEntity.getId());
+        userModel.setName(userEntity.getName());
+        userModel.setLastname(userEntity.getLastname());
+        return userModel;
     }
 
     @Override
     public UserEntity convertToEntity(UserModel userModel) {
-        return null;
+        UserEntity userEntity = new UserEntity();
+        userEntity.setName(userModel.getName());
+        userEntity.setId(userModel.getId());
+        userEntity.setLastname(userModel.getLastname());
+        return userEntity;
     }
 }
