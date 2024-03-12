@@ -20,8 +20,8 @@ public class UserService implements UserStorage {
     }
 
     @Override
-    public UserModel delete(Long id) {
-        return useStorage.delete(id);
+    public void delete(Long id) {
+        useStorage.delete(id);
     }
 
     @Override
